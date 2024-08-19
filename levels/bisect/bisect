@@ -3,15 +3,15 @@ cards = checkout commit-auto reset-hard bisect-start bisect-good bisect-bad
 
 [description]
 
-(Please zoom out a bit using your mouse wheel! :D)
+(마우스 휠로 조금 축소해 주세요! :D)
 
-Oh no! You have lost your key at some point during the day!
+오 아니! 오늘 동안 어느 순간에 키를 잃어버렸어요!
 
-Sure, you could look at every single commit in an attempt to find it - but there's a better way: your time machine has a built-in way to find the point in time where things went wrong quickly!
+물론, 모든 커밋을 확인하며 키를 찾을 수 있겠지만, 더 좋은 방법이 있어요: 당신의 타임머신은 문제가 발생했던 시점을 빠르게 찾을 수 있는 내장 기능을 가지고 있어요!
 
-First, play the "bisect start" card. Then, go to a commit where you don't have the key, and play the "bisect bad" card. Likewise, go to a commit early on where you have the key *in your pocket*, and play the "bisect good" card.
+먼저, "bisect start" 카드를 사용하세요. 그런 다음, 키가 없는 커밋으로 이동하여 "bisect bad" 카드를 사용하세요. 마찬가지로, 키가 주머니에 있는 초기 커밋으로 이동하여 "bisect good" 카드를 사용하세요.
 
-After you've found the last good commit, reset the main branch to it. What happened to the key after you lost it?
+좋은 마지막 커밋을 찾은 후, 메인 브랜치를 해당 커밋으로 리셋하세요. 키를 잃어버린 후 무슨 일이 일어났을까요?
 
 [setup]
 
@@ -40,4 +40,4 @@ test "$(git log --pretty=%s main | head -1)" -eq 11
 
 [congrats]
 
-Well done! :) The only problem is that you now have to walk all the way back home, again...
+잘 했어요! :) 단지, 이제는 다시 집까지 걸어서 돌아가야 하는 문제가 남아있네요...

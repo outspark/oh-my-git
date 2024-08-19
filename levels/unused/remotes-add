@@ -3,17 +3,17 @@ cards = checkout
 
 [description]
 
-Let's work together with others! Your friend has their own repo at the URL `../friend` - you can add it using
+다른 사람들과 함께 작업해 봅시다! 당신의 친구가 `../friend` URL에 자신의 리포지토리를 가지고 있습니다 - 다음을 사용하여 추가할 수 있습니다
 
     git remote add [name] [URL]
 
-where `[name]` is an arbitrary, short name you pick for the remote.
+여기서 `[name]`은 리모트를 위한 임의의 짧은 이름입니다.
 
-When you've done that, you can get all commits from that remote using
+그 작업이 완료되면 다음을 사용하여 해당 리모트의 모든 커밋을 가져올 수 있습니다
 
     git pull friend
 
-There's a letter for you!
+당신에게 편지가 도착했어요!
 
 [setup]
 
@@ -28,6 +28,8 @@ git commit -m "Write a letter"
 [win]
 
 # Add a remote that points to ../friend.
+# ../friend를 가리키는 리모트를 추가하세요.
 git remote -v | grep '../friend'
 # Pull from the remote.
+# 리모트에서 가져오기.
 git show HEAD:love_letter | grep committed

@@ -3,9 +3,9 @@ cards = config-name commit-auto checkout
 
 [description]
 
-You're still pretty confused by everything that's going on. The next day, you decide to enroll in time travel school!
+당신은 여전히 일어나고 있는 모든 일에 대해 혼란스러워합니다. 다음 날, 당신은 시간 여행 학교에 등록하기로 결심합니다!
 
-Your time travel teacher welcomes you: "Hello there! Wanna tell us your name?"
+당신의 시간 여행 선생님이 환영합니다: "안녕하세요! 이름을 알려주시겠어요?"
 
 [setup]
 
@@ -25,14 +25,14 @@ Signature: $(git config user.name)" >> form
 
 [win]
 
-# Introduce yourself.
+# 자신을 소개하세요.
 test "$(git config user.name)" != "You"
 
-# Fill out the enrollment form, and commit it!
+# 입학 신청서를 작성하고 커밋하세요!
 git show main:form | grep '\[[xX]\]'
 
 [congrats]
 
-"We're so glad to have you!
+"우리는 당신을 맞이하게 되어 너무 기쁩니다!
 
-Git can help you fix problems in the past! It allows you to collaborate with other students of time travel! It's really powerful, and it's really popular! I'll see you for your first lesson tomorrow!"
+Git은 과거의 문제를 해결하는 데 도움을 줄 수 있습니다! 그것은 다른 시간 여행 학생들과 협업할 수 있게 해줍니다! 매우 강력하고 매우 인기가 많습니다! 내일 첫 수업에서 뵙겠습니다!"

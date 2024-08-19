@@ -3,14 +3,13 @@ cards = file-new file-delete
 
 [description]
 
-Now that your room looks tidy, you can start to unpack your stuff. You brought two new pieces of furniture with you and with a bright smile,
-you see that their colors match the color of your bed!
+이제 방이 깔끔해 보이니, 짐을 풀기 시작할 수 있습니다. 두 개의 새 가구를 가져왔고, 미소를 지으며 가구의 색상이 침대 색상과 일치하는 것을 확인합니다.
 
-Build up your two pieces of furniture by playing the touch card.
-Then name your furniture - you can choose whatever you like.
+터치 카드를 사용해서 두 개의 가구를 조립하세요.
+그런 다음 가구의 이름을 지으세요 - 원하는 대로 선택할 수 있습니다.
 
-Make sure the colors match! You can find the bed's color in its description.
-Don't forget to add a color and description to your new furnitures, too!
+색상이 일치하는지 확인하세요! 침대의 색상은 설명에서 찾을 수 있습니다.
+새 가구에도 색상과 설명을 추가하는 것을 잊지 마세요!
 
 [setup]
 
@@ -29,4 +28,4 @@ test "$NUM_FILES" -ge 2 && test "$YELLOW_FILES" = "$NUM_FILES"
 
 [congrats]
 
-Don't you immediately feel more at home?
+즉시 더 편안하게 느껴지지 않나요?

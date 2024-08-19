@@ -3,11 +3,11 @@ cards = checkout commit-auto branch branch-delete reset-hard
 
 [description]
 
-Note that there are two options to "travel to the end of a timeline":
+타임라인의 끝으로 "이동하는" 두 가지 옵션이 있습니다:
 
-First, you can directly travel to the commit, like we've done it before.
+첫째, 앞에서 했듯이, 커밋으로 직접 이동할 수 있습니다.
 
-And second, you can travel to the branch label. In this case, when you make a new commit, the branch will grow with you, and still point at the end of the timeline!
+둘째, 브랜치 레이블로 이동할 수 있습니다. 이 경우, 새로운 커밋을 하면 브랜치가 성장하여 계속 타임라인의 끝을 가리키게 됩니다!
 
 [cli]
 
@@ -37,7 +37,7 @@ git branch -D main
 
 [win]
 
-# Travel directly to the last yellow commit of the birthday timeline, make a change to 'you', and make a commit
+# 생일 타임라인의 마지막 노란색 커밋으로 직접 이동하여, 'you'를 변경하고 커밋하세요.
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
     if test $(git rev-parse $commit^) = $(git rev-parse birthday); then
         return 0
@@ -45,5 +45,5 @@ for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch
 done
 return 1
 
-# Travel to the blue 'concert' branch, make a change to 'you', and a commit.
+# 파란색 'concert' 브랜치로 이동하여, 'you'를 변경하고 커밋하세요.
 git show concert^ | grep "Go to the concert"

@@ -3,9 +3,9 @@ cards = checkout commit reset-hard add
 
 [description]
 
-Sometimes, you might want to record the order in which things changed, instead of making a single commit.
+때때로, 단일 커밋 대신 변경된 내용의 순서를 기록하고 싶을 때가 있습니다.
 
-What happened here? Make two commits from the changes (using the "add" card), in an order that makes sense!
+여기서 무슨 일이 벌어졌을까요? 변경사항을 두 개의 커밋으로 만드세요 ("add" 카드를 사용하여), 논리적인 순서로 만드세요!
 
 [setup]
 

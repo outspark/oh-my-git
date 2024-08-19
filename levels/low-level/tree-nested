@@ -1,10 +1,10 @@
 [description]
 
-Trees can also point to other trees! This way, they can describe nested directory structures.
+트리는 다른 트리를 가리킬 수도 있습니다! 이렇게 하면 중첩된 디렉토리 구조를 설명할 수 있습니다.
 
-When you add a file inside of a directory to the index, and then call `git write-tree`, it will create a nested tree for the directory, and attach the blob to it.
+디렉토리 내부에 파일을 인덱스에 추가한 다음 `git write-tree`를 호출하면, 해당 디렉토리에 대한 중첩 트리를 만들고 Blob을 연결합니다.
 
-To solve this level, build a little stick figure, as shown on the left - a tree that points to two blobs, as well to a tree that points to two blobs.
+이 레벨을 해결하려면 왼쪽에 표시된 것처럼 두 개의 Blob을 가리키는 트리와 두 개의 Blob을 가리키는 트리를 가진 작은 스틱 피규어를 만드세요.
 
 [setup]
 
@@ -17,6 +17,8 @@ echo "I'm the left leg" > hip/leg1
 echo "I'm the right leg" > hip/leg2
 git add .
 git write-tree
+
+# 축하합니다! 스틱 피규어를 성공적으로 만들었습니다!
 
 [win]
 

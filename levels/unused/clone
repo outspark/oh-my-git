@@ -3,7 +3,7 @@ cards = clone commit-auto pull push
 
 [description]
 
-Get your friend's repo using clone, change something, push it back.
+친구의 저장소를 복제(clone)하고, 뭔가를 변경한 후, 다시 푸시(push)하세요.
 
 [setup]
 

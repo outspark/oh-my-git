@@ -3,9 +3,9 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-When you stashed your changes and you want to apply them back to your current working directory, you can use
+변경 사항을 저장해 두었던 스택에서 현재 작업 디렉토리로 되돌리고 싶다면, 다음 명령어를 사용할 수 있습니다:
     git stash pop
-This will remove the changes from the stash stack. If you also want to keep the changes on the stash stack, use
+이 명령어는 스택에서 변경 사항을 제거합니다. 만일 변경 사항을 스택에서 계속 보관하고 싶다면, 다음 명령어를 사용하세요:
     git stash apply
 
 ---
@@ -34,7 +34,7 @@ git checkout main
 
 [win]
 
-# Did you pop the changes from the stash stack?
+# 당신은 스택에서 변경 사항을 pop 했습니까?
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]
@@ -43,4 +43,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-Yay, you got your changes back! :)
+야호, 변경 사항을 되돌려 받았습니다! :)

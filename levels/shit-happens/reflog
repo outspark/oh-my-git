@@ -3,11 +3,11 @@ cards = checkout reflog
 
 [description]
 
-Say you were looking at something in the past, and then switched back to the main branch.
+과거의 어떤 것을 보고 있는 도중에, main 브랜치로 다시 체크아웃했습니다.
 
-But then, you got reaaally distracted, and after your lunch break, you can't remember on which commit in the past you were before. How can you find out?
+하지만 정말 정신이 산만해져서 점심시간 후에 당신이 전에 어떤 커밋을 보고 있었는지 기억이 나지 않습니다. 이를 어떻게 알아낼 수 있을까요?
 
-There's a convenient command that shows you all the places your HEAD did point to in the past:
+HEAD가 과거에 가리켰던 모든 지점을 보여주는 편리한 명령어가 있습니다:
 
     git reflog
 
@@ -22,5 +22,5 @@ git checkout main
 
 [win]
 
-# Find out where you've been before, and go back there!
+# 예전에 있던 지점을 찾아서 다시 돌아가세요!
 test "$(git rev-parse HEAD)" = "$(git rev-parse 3)"

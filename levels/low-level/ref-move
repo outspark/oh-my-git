@@ -1,10 +1,10 @@
 [description]
 
-You can point refs to a new location using the same command you use to create them:
+refs를 새 위치로 지정하려면 refs를 생성할 때 사용하는 명령어와 동일한 명령어를 사용할 수 있습니다:
 
     git update-ref refs/<refname> <object>
 
-As an exercise, make all refs in this repository point to the tree object!
+연습으로, 이 저장소의 모든 refs를 트리 오브젝트를 가리키도록 만들어보세요!
 
 [setup]
 
@@ -16,7 +16,9 @@ git add .
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "Initial commit")
 
+# git update-ref 명령어를 이용하여 refs/a를 BLOB1로 업데이트합니다.
 git update-ref refs/a "$BLOB1"
+# git update-ref 명령어를 이용하여 refs/b를 COMMIT으로 업데이트합니다.
 git update-ref refs/b "$COMMIT"
 
 [setup goal]
@@ -29,9 +31,12 @@ git add .
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "Initial commit")
 
+# git update-ref 명령어를 이용하여 refs/a를 BLOB1로 업데이트합니다.
 git update-ref refs/a "$BLOB1"
+# git update-ref 명령어를 이용하여 refs/b를 COMMIT으로 업데이트합니다.
 git update-ref refs/b "$COMMIT"
 
+# for-each-ref 명령어를 이용하여 모든 참조(ref)들을 가져오고 각 참조를 TREE로 업데이트합니다.
 for REF in $(git for-each-ref --format='%(refname)'); do
     git update-ref "$REF" "$TREE"
 done

@@ -1,14 +1,14 @@
 [description]
 
-So a tree describes a directory structure at a specific point in time.
+그래서 트리는 특정 시점의 디렉토리 구조를 설명합니다.
 
-It would be nice if we could remember when that state existed, and who authored it, right?
+그 상태가 언제 존재했는지, 누가 작성했는지 기억할 수 있으면 좋겠죠?
 
-Enter: commits. They are objects that point to a tree and contain some additional metadata. You can create a commit using
+여기서 등장하는 것이 커밋입니다. 커밋은 트리를 가리키는 객체이며, 일부 추가 메타데이터를 포함합니다. 다음을 사용하여 커밋을 생성할 수 있습니다.
 
-    git commit-tree <tree> -m "Description of your commit"
+    git commit-tree <tree> -m "커밋에 대한 설명"
 
-Make a commit from the tree in this repository!
+이 저장소에서 트리로부터 커밋을 만드세요!
 
 [setup]
 

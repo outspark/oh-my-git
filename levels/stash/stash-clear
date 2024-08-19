@@ -3,15 +3,15 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-If you want to inspect your stash stack, use the command
+만약 stash 스택을 점검하고 싶다면, 다음 명령어를 사용하세요
     git stash list
     
-Oh, you don't want to keep your stashed changes? There are way too many? Then go ahead and clear the stack with
+오, 저장된 변경 사항들을 유지하고 싶지 않으신가요? 너무 많이 쌓였나요? 그렇다면 다음 명령어로 스택을 비우세요
     git stash clear
-If you only want to discard a certain stash entry, you can use
+특정 stash 항목만 폐기하고 싶으면, 다음 명령어를 사용할 수 있습니다
     git stash drop <stash>
     
-Clear your stash stack!
+stash 스택을 비우세요!
 
 ---
 tipp1
@@ -46,6 +46,7 @@ git checkout main
 [win]
 
 # Did you clear your stash stack?
+# 당신의 stash 스택을 비웠나요?
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]
@@ -54,4 +55,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-All clear! :)
+모두 정리되었어요! :)

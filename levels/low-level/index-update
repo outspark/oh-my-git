@@ -1,14 +1,14 @@
 [description]
 
-Instead of removing an entry from the index and adding one with the same name, you can also directly update that entry!
+인덱스에서 항목을 제거하고 동일한 이름으로 항목을 추가하는 대신에, 해당 항목을 직접 업데이트할 수도 있습니다!
 
-Put the content you want in a file with a matching name, and then run
+원하는 내용을 일치하는 이름의 파일에 넣고, 그 다음에 다음 명령어를 실행하세요:
 
     git update-index <file>
 
-This will create a new blob, and update the hash of the entry to that blob.
+이렇게 하면 새로운 블랍(blob)을 생성하고, 해당 항목의 해시를 그 블랍으로 업데이트합니다.
 
-Update an entry in the index!
+인덱스의 항목을 업데이트하세요!
 
 [setup]
 
@@ -29,5 +29,5 @@ git update-index file1
 
 [win]
 
-# This is not really a good test for the winning condition...
+# 이것은 성공 조건을 위한 좋은 테스트가 아닙니다...
 test "$(git ls-files -s | git hash-object --stdin)" != "10c4b28623e7e44e09f5a596450a50ab7ac31fbe" -a "$(git ls-files | wc -l)" -eq 3

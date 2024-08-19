@@ -2,9 +2,9 @@ title = Ignoring files
 
 [description]
 
-That chicken is running around a lot, and changing often. We don't want to have it in our commits.
+그 치킨이 많이 돌아다니고, 자주 바뀌네요. 우리는 그것을 커밋에 포함시키고 싶지 않아요.
 
-Add it to the file .gitignore, and try using `git add .`!
+그것을 .gitignore 파일에 추가하고, `git add .`을 사용해보세요!
 
 [setup]
 

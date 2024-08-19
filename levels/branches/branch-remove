@@ -3,9 +3,9 @@ cards = checkout commit-auto reset-hard branch-delete
 
 [description]
 
-Life is full of dangers, right? Even when walking to school, it seems like there's a lot of risks!
+삶은 위험으로 가득 차 있죠? 학교에 가는 도중에도, 많은 위험이 있는 것 같습니다!
 
-This Monday is especially bad. You made it to school, but there's some timelines you definitely don't want to keep around.
+이번 월요일은 특히 나빠요. 학교에 도착했지만, 분명히 없애고 싶은 타임라인이 있습니다.
 
 [setup]
 
@@ -44,4 +44,4 @@ test "$(git show-ref --heads | cut -f2 -d' ')" = "$(echo refs/heads/leap)"
 
 [congrats]
 
-On second thought, maybe you even prefer the ice cream timeline to the main one? :)
+다시 생각해보니, 얼음 사탕 타임라인이 주요 타임라인보다 더 나을지도 몰라요? :)

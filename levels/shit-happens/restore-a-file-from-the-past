@@ -3,10 +3,10 @@ cards = checkout checkout-from commit
 
 [description]
 
-Here's a similar problem: you really liked the essay from the very first commit, and want to have it back! Well, checkout can also restore things from older commits, Here's how:
+여기 비슷한 문제의 예가 있습니다: 첫 번째 커밋에서 작성한 에세이가 정말 마음에 들어서 다시 가져오고 싶다면 어떻게 해야 할까요? checkout은 예전 커밋에서 파일을 복원할 수 있습니다. 방법은 다음과 같습니다:
 
     git checkout [commit] [file]
-
+    
 [setup]
 
 echo "good version" > essay
@@ -17,5 +17,5 @@ git commit -am "\"Improve\" essay"
 
 [win]
 
-# Get the first version of your essay, and make a new commit with it.
+# 에세이의 첫 번째 버전을 가져와서 새 커밋을 만드세요.
 test "$(git show main:essay)" = "good version"

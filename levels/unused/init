@@ -2,7 +2,7 @@ title = Welcome!
 cards = init
 
 [description]
-
+설명
 
 [setup]
 
@@ -10,5 +10,5 @@ rm -rf .git
 
 [win]
 
-# Again, initialize your time machine!
+# 다시, 타임머신을 초기화하세요!
 test -d .git

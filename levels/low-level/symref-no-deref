@@ -1,46 +1,30 @@
 [description]
 
-When you have a symbolic ref (a ref pointing at another ref), and you decide you want it to be a regular ref again (pointing to an object), you're in for some trouble! :)
+심볼릭 레퍼런스(다른 레퍼런스를 가리키는 레퍼런스)가 있을 때, 그것을 다시 일반 레퍼런스(객체를 가리키는)로 바꾸고 싶다면, 약간의 문제가 발생할 것입니다! :)
 
-What happens when you try pointing the symbolic ref directly to the blob using `git update-ref`?
+`git update-ref`를 사용하여 심볼릭 레퍼런스를 직접 Blob에 가리키려 하면 어떻게 될까요?
 
-Oops! Turns out that when you reference a symbolic ref, it acts as if you had specified the ref it points to. To de-symbolic-ize it, use the `--no-deref` option directly after `update-ref`!
+이런! 심볼릭 레퍼런스를 참조할 때, 마치 그것이 가리키는 레퍼런스를 지정한 것처럼 동작합니다. 심볼릭 특성을 제거하려면 `update-ref` 다음에 `--no-deref` 옵션을 사용하세요!
 
-Weird, huh?
+이상하죠?
 
 [congrats]
 
-Whew, we've covered a lot of things: Blobs! The index! Trees! Commits! Refs!
+우리는 많은 것들을 다루었습니다: Blob! 인덱스! 트리! 커밋! 레퍼런스!
 
-You now know about almost everything about how Git repositories look like on the inside! We think that's pretty cool! :)
+이제 Git 저장소가 내부에서 어떻게 생겼는지 거의 모든 것을 알게 되었습니다! 정말 멋지죠! :)
 
-Everything else is just convention and high-level commands that make interacting with the objects more convenient.
+나머지는 그냥 관습과 더 높은 수준의 명령일 뿐이며, 이것들을 사용하면 객체와의 상호작용이 더 편리해집니다.
 
-We haven't covered:
+우리가 다루지 않은 내용은 다음과 같습니다:
 
-- tag objects (they are the fourth object type - a bit like refs with a description and an author)
-- configuration (allows you to specify remote repositories, for example)
-- working with local files (which is, uh, arguably pretty important :P)
+- 태그 객체 (설명 및 작성자와 함께 참조와 비슷한 네 번째 객체 유형입니다)
+- 설정 (예를 들어 원격 저장소를 지정할 수 있게 해줍니다)
+- 로컬 파일 작업 (이것은, 음, 논쟁의 여지가 있지만 꽤 중요합니다 :P)
 
-Thanks for playing! You're welcome to check out the "puzzle" levels in the dropdown, some of them are more advanced!
+사용해주셔서 감사합니다! "퍼즐" 레벨 드롭다운에서 확인해 보세요, 일부는 더 고급입니다!
 
 [setup]
 
-BLOB1=$(echo delicious | git hash-object -w --stdin)
-BLOB2=$(echo very | git hash-object -w --stdin)
-git update-ref refs/curly "$BLOB1"
-git symbolic-ref refs/fries refs/curly
-
-[setup goal]
-
-BLOB1=$(echo delicious | git hash-object -w --stdin)
-BLOB2=$(echo very | git hash-object -w --stdin)
-git update-ref refs/curly "$BLOB1"
-git symbolic-ref refs/fries refs/curly
-
-git update-ref --no-deref refs/fries "$BLOB2"
-
-[win]
-
-git symbolic-ref refs/fries && return 1
-test "$(git show-ref -s refs/fries)" = "035e2968dafeea08e46e8fe6743cb8123e8b9aa6"
+# BLOB1과 BLOB2 값을 계산하여 해시 객체를 생성
+# 심볼릭 레퍼런스 refs/fries를 refs/curly로 설정

@@ -3,11 +3,11 @@ cards = add reset-file checkout-file mv commit
 
 [description]
 
-Other times, you might want to rename a file in the next commit. Use
+그런데 가끔은 다음 커밋에서 파일의 이름을 바꾸고 싶을 때가 있습니다. 그럴 때는
 
     git mv [file] [new name]
 
-for that. The effect is very similar as if you had created a copy with a new name, and removed the old version.
+을 사용하세요. 이 효과는 새 이름으로 복사본을 만들고, 오래된 버전을 제거한 것과 매우 유사합니다.
 
 [setup]
 
@@ -22,5 +22,5 @@ git add b
 
 [win]
 
-# Make a commit where you rename the file b to "x".
+# 파일 b의 이름을 "x"로 바꾸는 커밋을 만드세요.
 test "$(git ls-tree --name-only main)" = "$(echo -e "a\nc\nx")"

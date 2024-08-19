@@ -1,31 +1,34 @@
 [description]
 
-At its core, Git is very simple. It stores "objects", which are basically files identified by an "identifier" (short: ID).
+Git의 핵심은 매우 간단합니다. "객체"를 저장하며, 이는 기본적으로 "식별자"(짧게: ID)로 식별되는 파일입니다.
 
-There are four types of objects: blobs, trees, commits, and tags. The simplest type is a "blob", which is just a piece of text.
+객체에는 네 가지 유형이 있습니다: blob, tree, commit, tag. 가장 간단한 유형은 "blob"으로, 그냥 텍스트 조각입니다.
 
-Let's create some blobs! To do that, create a file with the desired content, and then use
+블롭을 만들어 봅시다! 이를 위해 원하는 내용을 파일에 작성한 후,
 
     git hash-object -w <file>
 
-The flag -w means "write", and tells Git to actually write the new blob to the disk.
+명령을 사용하세요.
 
-Create three new blobs!
+옵션 -w는 "write"를 의미하며, Git에게 새로운 블롭을 디스크에 실제로 쓰라고 지시합니다.
+
+새로운 블롭을 세 개 만들어 보세요!
 
 [congrats]
 
-Tip: You can also use a command like this to create a blob in a single line:
+팁: 이 명령을 사용하여 한 줄로 블롭을 만들 수도 있습니다:
 
     echo "awesome content" | git hash-object -w --stdin
 
-Did you already notice that you can drag and drop all objects? :)
+모든 객체를 드래그 앤 드롭 할 수 있다는 것을 이미 알아챘나요? :)
 
 [setup]
 
-[setup goal]
-
+# 이 명령어는 파일에 "Hi" 라는 문자열을 씁니다
 echo "Hi" > file1
+# 이 명령어는 파일에 "Ho" 라는 문자열을 씁니다
 echo "Ho" > file2
+# 이 명령어는 파일에 "Hu" 라는 문자열을 씁니다
 echo "Hu" > file3
 git hash-object -w file1
 git hash-object -w file2

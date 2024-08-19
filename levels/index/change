@@ -3,15 +3,15 @@ cards = add commit
 
 [description]
 
-When we change files, the index won't change on its own. We have to use `git add` to update the index to the changed version of the file.
+파일을 변경하면 인덱스는 자동으로 변경되지 않습니다. `git add`를 사용하여 파일의 변경된 버전을 인덱스에 업데이트해야 합니다.
 
-Let's try that!
+한번 해봅시다!
 
-The icons in the file browser show you when the actual file (white) and the version in the index (blue) are different, and when they are the same!
+파일 탐색기의 아이콘은 실제 파일(흰색)과 인덱스에 있는 버전(파란색)이 다를 때와 같을 때를 보여줍니다!
 
 [win]
 
-Good! The index is sometimes also called the "staging area" - it contains exactly what ends up in the next commit when you use `git commit`!
+좋습니다! 인덱스는 때때로 "스테이징 영역"이라고도 불리며, `git commit`을 사용할 때 다음 커밋에 포함될 내용을 정확히 담고 있습니다!
 
 [setup]
 
@@ -19,13 +19,8 @@ echo "The candle is burning with a blue flame." > candle
 git add .
 git commit -m "The beginning"
 
-[win]
+# candle을 변경하세요.
 
-# Make a change to the candle.
-test "$(git diff --name-only)" = "candle" || file -f .git/candle-changed && touch .git/candle-changed
+# candle을 추가하세요.
 
-# Add the candle.
-test "$(git diff --cached --name-only)" = "candle" || file -f .git/candle-added && touch .git/candle-added
-
-# Make a commit.
-test "$(git diff --name-only HEAD HEAD^)" = "candle"
+# 커밋을 만드세요.

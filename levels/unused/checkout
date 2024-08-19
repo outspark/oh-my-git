@@ -3,9 +3,9 @@ cards = checkout-file
 
 [description]
 
-You've been working on your essay for a while. But - ughh! Now your cat walks over your keyboard and "helps you", so now it's all messed up! :/
+당신은 오랫동안 에세이를 작성해왔습니다. 하지만 - 아, 이런! 고양이가 키보드 위를 걸어 다니면서 "도와줘서" 이제 엉망이 되어 버렸어요! :/
 
-But Git is here to help! To discard all changes your cat made, and go back to the version in the last commit, use `checkout`!
+하지만 Git이 도와줄 수 있습니다! 고양이가 변경한 모든 사항을 취소하고, 마지막 커밋의 버전으로 돌아가려면 `checkout`을 사용하세요!
 
 [setup]
 
@@ -27,5 +27,5 @@ blaaaargh" > essay.txt
 
 [win]
 
-# Restore the version from the last commit.
+# 마지막 커밋의 버전으로 복원하세요.
 cat essay.txt | grep D

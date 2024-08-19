@@ -1,18 +1,18 @@
 [description]
 
-After carefully building the index we want, it would be nice to save a permanent snapshot of it, right?
+우리가 원하는 인덱스를 신중하게 구축한 후, 그것의 영구적인 스냅샷을 저장하면 좋겠죠?
 
-This is what the second type of objects is for: trees! You can convert the index into a tree using
+이것이 두 번째 유형의 객체가 필요한 이유입니다: 트리! 다음을 사용하여 인덱스를 트리로 변환할 수 있습니다:
 
     git write-tree
 
-Try it! :)
+시도해 보세요! :)
 
 [congrats]
 
-Nice!
+잘했어요!
 
-Can you make a different tree? Modify the index, then call `git write-tree` again!
+다른 트리를 만들 수 있나요? 인덱스를 수정한 다음 다시 `git write-tree`를 호출해 보세요!
 
 [setup]
 

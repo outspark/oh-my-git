@@ -1,10 +1,10 @@
-[description]
+[설명]
 
-And finally, to delete a ref, use
+마지막으로, ref를 삭제하려면
 
     git update-ref -d refs/<refname>
 
-Delete all refs! :P (Well, except for HEAD. HEAD is special.)
+모든 refs를 삭제하세요! :P (단, HEAD는 제외합니다. HEAD는 특별합니다.)
 
 [setup]
 
@@ -36,6 +36,6 @@ for REF in $(git for-each-ref --format='%(refname)'); do
     git update-ref -d "$REF"
 done
 
-[win]
+[승리]
 
 test "$(git show-ref | wc -l)" -eq 0

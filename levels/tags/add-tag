@@ -3,15 +3,15 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-Some of your commits may be special commits. Maybe you reached a milestone or a new version number.
+어떤 커밋들은 특별할 수 있습니다. 예를 들어, 당신은 마일스톤에 도달했거나 새로운 버전 번호에 도달했을 수 있습니다.
 
-You can mark these commits with a special flag called 'tag'.
+이러한 커밋에는 '태그'라는 특별한 플래그를 표시할 수 있습니다.
 
-Write 
+커밋에 태그를 표시하려면
 
     git tag <tag-name> 
     
-to tag your commit.
+이라고 작성하세요.
 
 ---
 tipp1
@@ -41,7 +41,7 @@ git checkout --detach main
 
 [win]
 
-# Did you create a new tag?
+# 새 태그를 생성하셨나요?
 test "$(git tag -l | wc -l)" -ge 1
 
 [actions]
@@ -50,4 +50,4 @@ test "$(git tag -l | wc -l)" -ge 1
 
 [congrats]
 
-Nice! You tagged your first commit :)
+좋아요! 처음으로 커밋에 태그를 표시하셨습니다 :)

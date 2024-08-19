@@ -3,13 +3,13 @@ cards = add reset-file commit
 
 [description]
 
-See the dark shadow behind the icons? That's the version of the file in the last commit!
+아이콘 뒤의 어두운 그림자가 보이시나요? 그 파일의 마지막 커밋 버전입니다!
 
-For example, these candles have been blown out, and that change has been added.
+예를 들어, 이 촛불들은 꺼졌고, 그 변경사항이 추가되었습니다.
 
-But you decide that this was a mistake! You only want to blow out the red candle in the next commit!
+하지만 이건 실수였다고 결정했습니다! 다음 커밋에서는 빨간 촛불만 끄고 싶습니다!
 
-If you already have updated the index to a changed file, but want to reset it, you can use `git reset`!
+이미 변경된 파일을 인덱스에 업데이트했지만, 이를 재설정하고 싶다면 `git reset`을 사용할 수 있습니다!
 
 [setup]
 
@@ -26,12 +26,12 @@ git add .
 
 [win]
 
-# Reset the changes in the green and blue candles!
+# 녹색 및 파란 촛불의 변경 사항을 재설정하세요!
 git show :green_candle | grep burning &&
 git show :blue_candle | grep burning &&
 git show :red_candle | grep -v burning
 
-# And make a commit!
+# 그리고 커밋하세요!
 git show main:green_candle | grep burning &&
 git show main:blue_candle | grep burning &&
 git show main:red_candle | grep -v burning

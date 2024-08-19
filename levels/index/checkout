@@ -3,9 +3,9 @@ cards = add reset-file checkout-file commit
 
 [description]
 
-So you've made changes to your files, but you decide that you don't want to keep them! You can use `git checkout` for that!
+파일을 수정했는데 변경사항을 유지하고 싶지 않나요? `git checkout`을 사용하면 됩니다!
 
-What happens if you have already update the index, like in file c? You have to reset the index first!
+이미 인덱스를 업데이트한 파일 c처럼 된 경우엔 어떻게 해야 할까요? 먼저 인덱스를 초기화해야 합니다!
 
 [setup]
 
@@ -21,5 +21,5 @@ git add c
 
 [win]
 
-# Remove all changes in your local files!
+# 로컬 파일에서 모든 변경사항을 제거하세요!
 test "$(git diff --name-only | wc -l)" -eq 0

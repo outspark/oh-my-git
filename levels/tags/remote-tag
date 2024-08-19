@@ -3,21 +3,21 @@ cards = pull push commit-auto checkout
 
 [description]
 
-When you work with remote repositories, tags are not pushed or pulled automatically.
+원격 저장소를 사용할 때 태그는 자동으로 푸쉬(push) 또는 풀(pull)되지 않습니다.
 
-You can push a tag with
+태그를 푸쉬하려면:
     git push <remote> <tag-name>
-Or all tags with:
+또는 모든 태그를 푸쉬하려면:
     git push <remote> --tags
     
-Deleting tags on your remote works with: 
+원격에서 태그를 삭제하려면: 
     git push <remote> --delete <tag-name>
     
-You can also sync 
+동기화할 수도 있습니다:
     git fetch <remote> --prune --prune-tags
 
 
-Add a tag named "v2" to the last commit and push it to the remote. Also pull the v1 tag to your local repository.
+"v2"라는 태그를 마지막 커밋에 추가하고 원격 저장소에 푸쉬하십시오. 또한 "v1" 태그를 로컬 저장소로 풀 하십시오.
 [setup yours]
 
 git checkout main
@@ -38,21 +38,21 @@ git branch -u friend/main main
 
 [setup friend]
 
-
+# 친구의 설정
 
 [actions friend]
 
 git tag v1 HEAD~1
 
 [win]
-# v1 tag in your repo
+# v1 태그가 로컬 저장소에 있는지 확인
 test "$(git show v1 -s --format=%h)" = "$(git show HEAD~1 -s --format=%h)"
 
-# v2 tag in your repo
+# v2 태그가 로컬 저장소에 있는지 확인
 test "$(git show v2 -s --format=%h)" = "$(git show HEAD -s --format=%h)"
 
 
 [win friend]
 
-# v2 tag in the remote
+# 원격 저장소에 v2 태그가 있는지 확인
 test "$(git show v2 -s --format=%h)" = "$(git show HEAD -s --format=%h)"

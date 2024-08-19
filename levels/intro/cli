@@ -3,7 +3,7 @@ cards =
 
 [description]
 
-These playing cards are designed to be easy to use and to remember! We'd suggest sticking to them if you don't have a lot of experience with Git!
+이 카드는 사용하기 쉽고 외우기 쉽도록 디자인되었습니다! Git 경험이 많지 않다면 이 카드를 사용하는 것을 추천합니다!
 
 [cli]
 
@@ -17,11 +17,11 @@ rm -rf .git
 
 [win]
 
-# Initialize the time machine!
+# 타임머신 초기화!
 test -d .git
 
 [congrats]
 
-Cool! Instead of using the playing cards, you can also do everything via the command line!
+멋져요! 플레이 카드를 사용하는 대신, 모든 작업을 커맨드 라인에서도 할 수 있습니다!
 
-The command line is pretty powerful! Often, you can use it to solve tasks faster compared to using a graphical interface.
+커맨드 라인은 매우 강력합니다! 종종 그래픽 인터페이스를 사용하는 것보다 더 빨리 작업을 해결할 수 있습니다.

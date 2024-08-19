@@ -3,13 +3,13 @@ cards = add commit
 
 [description]
 
-So far, when we made a commit, we've always recorded the current status of all objects, right?
+지금까지 우리는 커밋을 할 때 항상 모든 객체의 현재 상태를 기록했습니다, 그렇죠?
 
-But Git allows you to pick which changes you want to put in a commit!
+하지만 Git을 사용하면 어떤 변경사항을 커밋에 포함할지 선택할 수 있습니다!
 
-To learn how that works, we need to learn about the "index"! In the index, we can prepare what will be in the next commit. In this game, the index is represented by a blue aura around icons in the file browser!
+그 작업 방법을 배우려면 "인덱스"에 대해 배워야 합니다! 인덱스에는 다음 커밋에 무엇이 포함될지를 준비할 수 있습니다. 이 게임에서는 인덱스가 파일 브라우저의 아이콘 주변에 파란색 오라로 표시됩니다!
 
-Initially, the index is empty. To make a commit that contains a new file, we need to add it!
+처음에는 인덱스가 비어 있습니다. 새 파일이 포함된 커밋을 만들려면 파일을 추가해야 합니다!
 
 [cli]
 
@@ -21,8 +21,8 @@ echo "The candle is burning with a blue flame." > candle
 
 [win]
 
-# Add the candle.
+# 양초를 추가하세요.
 test "$(git diff --cached --name-only)" = "candle" || file -f .git/candle-added && touch .git/candle-added
 
-# Make a commit.
+# 커밋을 만드세요.
 test "$(git ls-tree --name-only HEAD)" = "candle"

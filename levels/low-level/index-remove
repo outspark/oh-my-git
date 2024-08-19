@@ -1,10 +1,10 @@
 [description]
 
-To remove an entry from the index, use a command like this:
+색인에서 항목을 제거하려면 다음과 같은 명령을 사용하십시오:
 
     git update-index --force-remove <file>
 
-Remove all entries from the index!
+모든 항목을 색인에서 제거하십시오!
 
 [setup]
 

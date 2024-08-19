@@ -3,7 +3,7 @@ cards = checkout add pull push commit-auto merge
 
 [description]
 
-Both you and your friend have been working on the file, and want to sync up!
+당신과 친구가 같은 파일을 수정하고 있어 이를 동기화하고 싶어합니다!
 
 [setup yours]
 
@@ -24,10 +24,10 @@ git commit -a -m "friends version"
 
 [win]
 
-# Commit your local changes.
+# 로컬 변경사항을 커밋하세요.
 test "$(git status -s)" = ""
 
 [win friend]
 
-# Look at your friend's suggestion, make a compromise, and push it back.
+# 친구의 제안을 확인하고, 절충안을 만들어 다시 푸시하세요.
 git rev-parse main^ && test "$(git rev-parse main^1^)" = "$(git rev-parse main^2^)"

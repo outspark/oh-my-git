@@ -1,9 +1,9 @@
-title = Nice to meet you!
+title = 만나서 반가워요!
 cards = config-name config-email
 
 [description]
 
-Introduce yourself using
+자신을 소개하려면 다음을 사용하세요
 
     git config --global user.name Firstname
     git config --global user.email "your@mail.com"
@@ -16,8 +16,8 @@ test "$(git config user.name)" != "You" && hint "Hey $(git config user.name), ni
 
 [win]
 
-# Have a name configured.
+# 이름이 설정되어 있습니다.
 test "$(git config user.name)" != "You"
 
-# Have an email address configured.
+# 이메일 주소가 설정되어 있습니다.
 test "$(git config user.email)" != "you@time.agency"

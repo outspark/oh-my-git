@@ -3,11 +3,11 @@ cards = init
 
 [description]
 
-You've been accepted to time travel school! Yay! It's your first day! Your teacher explains:
+당신은 시간 여행 학교에 입학했습니다! 축하합니다! 오늘은 첫날입니다! 선생님이 설명합니다:
 
-"To do anything with a time machine, you first need to initialize it!"
+"시간 기계를 사용하려면 먼저 초기화해야 합니다!"
 
-Drag that blue card up to play it!
+파란 카드를 드래그하여 플레이하세요!
 
 [setup]
 
@@ -20,4 +20,4 @@ test -d .git
 
 [congrats]
 
-Nice! See that little owl squirrel that appeared? It will be your companion, and always show you where you are in time!
+좋아요! 저 작은 올빼미 다람쥐 보이나요? 그것은 당신의 동반자가 되어, 항상 당신이 시간 속에서 어디에 있는지 보여줄 것입니다!

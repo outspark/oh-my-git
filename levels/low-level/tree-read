@@ -1,15 +1,16 @@
 [description]
 
-As soon as you have some tree objects, you can always read them and set the index exactly to their content! Unsurprisingly, the command is called
+일단 트리 객체가 몇 개 있으면 언제든지 트리를 읽고 그 내용 그대로 인덱스를 설정할 수 있습니다! 예상하셨겠지만, 이 명령어는
 
     git read-tree <tree>
 
-For <tree>, you can provide the hash of any tree object - you can right-click one to insert its hash into the terminal!
+입니다. <tree>에는 어떤 트리 객체의 해시라도 제공할 수 있습니다 - 우클릭으로 해시를 터미널에 삽입하세요!
 
-Try reading some of the trees in this repository into the index!
+이 리포지토리의 트리 중 몇 개를 인덱스로 읽어보세요!
 
 [setup]
 
+# EMPTY_TREE 변수에 현재 트리에 대한 해시 저장
 EMPTY_TREE=$(git write-tree)
 
 echo "file 1" > file1
@@ -24,6 +25,7 @@ echo "file C" > fileC
 git add .
 TRIPLE_TREE=$(git write-tree)
 
+# EMPTY_TREE 읽어서 현재 인덱스 비우기
 git read-tree "$EMPTY_TREE"
 
 [setup goal]

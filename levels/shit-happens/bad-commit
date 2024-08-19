@@ -3,14 +3,14 @@ cards = reset commit-a
 
 [description]
 
-Oh no, we made a bad commit! How can we undo making the commit, and go back to a point where we can try again?
+오 이런, 우리는 잘못된 커밋을 했어요! 커밋을 되돌리고 다시 시도할 수 있는 시점으로 돌아가려면 어떻게 해야 할까요?
 
-The answer is using `git reset [commit]`, which does two things:
+정답은 `git reset [commit]` 명령어를 사용하는 것입니다. 이 명령어는 두 가지를 수행합니다:
 
-- It resets the current branch ref to the commit you specify.
-- And it resets the index to that commit.
+- 현재 브랜치 참조를 지정한 커밋으로 재설정합니다.
+- 인덱스를 지정한 커밋으로 재설정합니다.
 
-It does not change your working directory in any way, which means that after that, you can try making the commit you want again.
+작업 디렉토리를 변경하지 않기 때문에, 이후에 원하는 커밋을 다시 시도할 수 있습니다.
 
 [setup]
 
@@ -22,9 +22,9 @@ git commit -am "More numberrrrrs"
 
 [win]
 
-# In the last main commit, the numbers file contains the numbers from 1 to 10.
+# 마지막 메인 커밋에서, numbers 파일에는 1부터 10까지의 숫자가 포함되어 있습니다.
 test "$(git show main:numbers)" = "1 2 3 4 5 6 7 8 9 10"
-# The commit message of that commit is "More numbers".
+# 해당 커밋의 커밋 메시지는 "More numbers" 입니다.
 git log -1 --oneline | grep "More numbers"
-# The commit with the typo is not part of the main branch anymore.
+# 오타가 있는 커밋은 더 이상 메인 브랜치의 일부가 아닙니다.
 git log --oneline | grep -v "rrrrr"

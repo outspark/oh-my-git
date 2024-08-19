@@ -3,11 +3,10 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-When you want to reapply your changes but you already continued working on your file, you might get
-a merge conflict! Let's practise this situation.
-Pop the changes from the stash with
+변경 사항을 다시 적용하고 싶지만 이미 파일을 계속 작업 중인 경우에는 충돌이 발생할 수 있습니다! 이 상황을 연습해 봅시다.
+아래 명령어로 스택에서 변경 사항을 꺼내고:
     git stash pop
-and resolve the merge conflict. Commit the resolved changes and clear the stash stack afterwards.
+충돌을 해결하십시오. 해결된 변경 사항을 커밋하고 이후 스택 스택을 비우세요.
 
 ---
 tipp1
@@ -39,10 +38,10 @@ git add recipe
 
 [win]
 
-# Did you resolve the conflict and commit?
+# 충돌을 해결하고 커밋하셨나요?
 { git show HEAD | grep "Flour"; } && { git show HEAD | grep "Salt"; }
 
-# Did you clear stash stack?
+# 스택 스택을 비웠나요?
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]
@@ -51,4 +50,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-Yay, you got your changes back! :)
+와우, 변경 사항을 되찾으셨네요! :)

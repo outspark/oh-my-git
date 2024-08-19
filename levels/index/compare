@@ -3,13 +3,13 @@ cards = checkout commit-auto
 
 [description]
 
-Welcome to today's lesson! We're going to learn how to make commits with more precision!
+오늘의 수업에 오신 것을 환영합니다! 우리는 더 정밀하게 커밋하는 방법을 배울 것입니다!
 
-Have a look at these two timelines. They have exactly the same outcome. But one of them makes it much easier to figure out what happened.
+이 두 가지 타임라인을 살펴보세요. 이들은 정확히 동일한 결과를 가지고 있습니다. 하지만 그 중 하나가 무슨 일이 일어났는지 더 쉽게 이해할 수 있게 해줍니다.
 
 [win]
 
-# Right! Having each change in its own commit makes it easier to understand what's going on! Let's learn how to do that!
+# 맞아요! 각 변경 사항을 별도의 커밋으로 만드는 것이 무슨 일이 일어났는지 이해하기 쉽게 만듭니다! 그 방법을 배워봅시다!
 git branch --show-current | grep step-by-step
 
 [setup]
@@ -47,5 +47,5 @@ git checkout HEAD~3
 
 [win]
 
-# Pick the timeline that's clearer, and make the alarm go off!
+# 더 명확한 타임라인을 선택하고, 알람이 울리게 만드세요!
 git show step-by-step:smoke_detector | tail -n 1 | grep -v "absolutely silent"

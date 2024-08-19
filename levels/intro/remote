@@ -3,9 +3,9 @@ cards = pull commit-auto push
 
 [description]
 
-Let's add your name to our list of students!
+우리 학생 명단에 이름을 추가해보아요!
 
-I already have a second commit of it in my time machine - let's work together!
+저는 이미 두 번째 커밋을 타임머신에 저장해두었어요 - 함께 작업해봅시다!
 
 [cli]
 
@@ -13,7 +13,7 @@ To go back to old commands, you can press arrow up and down. That way, you don't
 
 [congrats]
 
-Welcome to time travel school! :) I'll see you for your first class tomorrow!
+타임 트래블 학교에 오신 것을 환영합니다! :) 내일 첫 수업에서 뵙겠습니다!
 
 [setup]
 
@@ -38,15 +38,19 @@ git commit -m "Added two students"
 [win]
 
 # Get the second commit from your teacher using `git pull`.
+# `git pull` 명령어를 사용하여 선생님의 두 번째 커밋을 가져오세요.
 test "$(git log --oneline teacher/main | wc -l)" -ge 2
 
 # Add your name to the list of students
+# 학생 명단에 자신의 이름을 추가하세요
 test "$(cat students |wc -l)" -ge 5
 
 # Commit your result.
+# 결과를 커밋하세요.
 test "$(git show main:students |wc -l)" -ge 5
 
 [win teacher]
 
 # And use `git push` to send it to your teacher!
+# 그리고 `git push`를 사용하여 이를 선생님에게 보내세요!
 test "$(git show main:students |wc -l)" -ge 5

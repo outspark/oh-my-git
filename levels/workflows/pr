@@ -3,8 +3,7 @@ cards = clone commit-auto reset-hard checkout file-new branch
 
 [description]
 
-Your friend has a problem! Clone the repo located in `../friend`, create a branch called "solution", and fix the problem in this branch. When you're ready, make a "Pull Request" by using `git tag pr`.
-
+당신의 친구가 문제가 있어요! `../friend`에 있는 리포지토리를 클론하고, "solution"이라는 브랜치를 만들어서 이 브랜치에서 문제를 고치세요. 문제가 해결되면, `git tag pr`을 사용하여 "Pull Request"를 만드세요.
 
 [setup]
 

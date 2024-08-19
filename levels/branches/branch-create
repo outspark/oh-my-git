@@ -3,9 +3,9 @@ cards = checkout commit-auto branch branch-delete reset-hard
 
 [description]
 
-You were invited to two parties! At one of them, your favorite band is playing - and the other one is your best friend's birthday party. Where should you go? No worries - as a time travel agent in training, you can go to both parties!
+당신은 두 파티에 초대받았습니다! 하나는 당신이 가장 좋아하는 밴드가 공연하는 파티이고 - 다른 하나는 당신의 가장 친한 친구의 생일 파티입니다. 어디에 가야 할까요? 걱정하지 마세요 - 시간 여행 요원 훈련생으로서, 당신은 두 파티에 모두 갈 수 있습니다!
 
-To make it easier to tell which timeline is which, you can create time portals! (We call these "branches".)
+각각의 타임라인을 구분하기 쉽게 하기 위해, 당신은 시간 포털을 만들 수 있습니다! (우리는 이것을 "브랜치"라고 부릅니다.)
 
 [cli]
 
@@ -31,14 +31,14 @@ git branch -D main
 
 [win]
 
-# Create a branch called 'birthday' that points to the birthday timeline.
+# 생일 파티 타임라인을 가리키는 'birthday'라는 브랜치를 만드세요.
 git show birthday | grep 'to the birthday'
 
-# Create a branch called 'concert' that points to the concert timeline.
+# 콘서트 타임라인을 가리키는 'concert'라는 브랜치를 만드세요.
 git show concert | grep 'to the concert'
 
 [congrats]
 
-Now you can travel between those branches easily (using `git checkout`) - try it!
+이제 쉽게 브랜치 간 이동이 가능합니다 (`git checkout`을 사용). 한번 해보세요!
 
-Your friend is happy that you made it to the birthday party and you also got your concert ticket signed. Yay!
+당신의 친구는 당신이 생일 파티에 와서 기뻐하고, 당신은 콘서트 티켓에 서명을 받았습니다. 야호!

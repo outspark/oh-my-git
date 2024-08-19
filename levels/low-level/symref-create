@@ -1,14 +1,17 @@
 [description]
 
-Instead of pointing directly to objects, refs can also point to other refs!
+직접 객체를 가리키는 대신, refs는 다른 refs를 가리킬 수도 있습니다!
 
-When that happens, they are called "symbolic refs". You can create or update a symbolic ref using
+그럴 때에는 "symbolic refs"라고 불립니다. symbolic ref를 생성하거나 업데이트하려면 다음을 사용합니다.
 
     git symbolic-ref <name> <ref>
 
-Create a symbolic ref called "refs/rainbow"!
+"refs/rainbow"라는 symbolic ref를 생성하세요!
 
 [setup]
+
+# Set up environment
+# 환경 설정
 
 [setup goal]
 

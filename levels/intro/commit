@@ -3,15 +3,15 @@ cards = commit-auto
 
 [description]
 
-You can use your time machine to make snapshots of objects around you! Here, let's practice this!
+주변 물체의 스냅샷을 만들기 위해 타임머신을 사용할 수 있습니다! 여기서 연습해 봅시다!
 
-(Your teacher pours some water into a glass.)
+(선생님이 유리잔에 물을 붓습니다.)
 
 [cli]
 
-Again, instead of using the card, you can also type the commands which are printed on it into the black terminal below!
+다시 말씀드리지만, 카드를 사용하는 대신 아래의 검은 터미널에 카트에 있는 명령어를 직접 입력할 수도 있습니다!
 
-This is totally optional! But this will be a super useful skill in the real world - and it will give you a sparkling golden badge! :)
+이건 전적으로 선택 사항입니다! 하지만 현실 세계에서 매우 유용한 기술이 될 것입니다 - 그리고 반짝이는 황금 배지를 받을 수 있습니다! :)
 
 [setup]
 
@@ -19,15 +19,15 @@ echo "The glass is full of water." > glass
 
 [win]
 
-# Make a snapshot of the glass (a "commit")
+# 유리잔의 스냅샷을 만드세요 ("커밋하기")
 git rev-parse HEAD
 
-# Change the contents of the glass!
+# 유리잔의 내용을 변경하세요!
 ! test "$(cat glass)" = "The glass is full of water."
 
-# And make a second commit!
+# 그리고 두 번째 커밋을 만드세요!
 git rev-parse HEAD^ && ! test "$(git show main:glass)" = "The glass is full of water."
 
 [congrats]
 
-Nice! You can try making some additional commits. When you feel comfortable, click on "Next Level".
+좋아요! 추가로 몇 가지 커밋을 더 만들어 볼 수 있습니다. 편안해지면 "다음 단계"를 클릭하세요.

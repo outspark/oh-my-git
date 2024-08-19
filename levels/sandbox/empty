@@ -2,6 +2,9 @@ title = Empty sandbox
 
 [description]
 
-This is an empty sandbox you can play around in.
+이것은 당신이 가지고 놀 수 있는 빈 모래상자입니다.
 
 [setup]
+
+# This is an empty sandbox setup you can modify as you wish.
+이것은 당신이 원하는 대로 수정할 수 있는 빈 모래상자 설정입니다.

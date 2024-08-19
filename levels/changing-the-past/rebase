@@ -3,11 +3,11 @@ cards = checkout commit-auto reset-hard rebase
 
 [description]
 
-Okay - turns out that saving time in the morning by utilizing parallel universes is against the regulations of the International Time Travel Association. You'll have to do your tasks in sequence after all.
+좋아요 - 평행 우주를 활용해 아침 시간을 절약하는 것은 국제 시간 여행 협회의 규정에 위배된다는 사실을 알게 되었습니다. 결국 모든 작업을 순서대로 해야 합니다.
 
-See the "rebase" card? When you drag it to a commit, it will copy the events in your current timeline after the specified one! This way, make a clean, linear timeline where you visit all three shops.
+"rebase" 카드를 보세요. 이 카드를 커밋으로 끌어다 놓으면 현재 타임라인에서 지정된 커밋 이후에 이벤트가 복사됩니다. 이렇게 하면 모든 상점을 방문하는 깔끔하고 선형적인 타임라인을 만들 수 있습니다.
 
-Again, we want to make that our base reality - the "main" branch should point to that timeline!
+다시, 우리는 이 타임라인을 우리의 기본 현실로 만들고 싶습니다 - "main" 브랜치가 이 타임라인을 가리키게 해야 합니다!
 
 [setup]
 
@@ -76,11 +76,11 @@ git checkout --detach main
 
 [win]
 
-# Order all tree branches into one and move the main branch ref
+# 모든 세 줄기를 하나로 정리하고 main 브랜치 ref를 이동하세요
 { git show main:you | grep "You ate.*baguette"; } && { git show main:you | grep "You drank.*coffee"; } && { git show main:you | grep "You ate.*donut"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
 
 [congrats]
 
-Notice how the other timelines and commits are still there - if anything goes wrong, you can also travel back to them.
+다른 타임라인과 커밋이 여전히 존재한다는 것을 주목하세요 - 만약 무언가 잘못되면 언제든지 그 타임라인으로 돌아갈 수 있습니다.
 
-It's really hard to actually *destroy* stuff with your time machine.
+시간 여행기로 무언가를 실제로 *파괴*하는 것은 매우 어렵습니다.

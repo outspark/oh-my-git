@@ -1,12 +1,12 @@
 [description]
 
-When using the commit-tree command, you can optionally specify a parent:
+commit-tree 명령어를 사용할 때 부모를 선택적으로 지정할 수 있습니다:
 
-    git commit-tree <tree> -m "Description" -p <parent commit>
+    git commit-tree <tree> -m "설명" -p <부모 커밋>
 
-Make a string of three commits!
+세 개의 커밋으로 이루어진 문자열을 만드세요!
 
-Hint: You'll need a tree object. What could be the easiest way to obtain one?
+힌트: 트리 객체가 필요합니다. 가장 쉬운 방법은 무엇일까요?
 
 [setup]
 

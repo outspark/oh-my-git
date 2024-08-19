@@ -1,8 +1,8 @@
 [description]
 
-Delete all objects in this repository using git commands only!
+Git 명령만을 사용하여 이 저장소의 모든 객체를 삭제하십시오!
 
-Useful commands:
+유용한 명령어:
 
     git prune
     git reflog expire
@@ -33,7 +33,9 @@ git update-ref refs/interesting "$BLOB"
 
 TREE=$(git mktree)
 git read-tree $TREE
+# 모든 참조 제거
 rm -rf .git/refs/*
+# 모든 객체 제거
 rm -rf .git/objects/*
 
 [win]

@@ -3,9 +3,9 @@ cards = checkout commit-auto
 
 [description]
 
-Did you know that creating parallel timelines is perfectly legal and safe? It's true!
+평행 타임라인을 만드는 것이 완전히 합법적이고 안전하다는 것을 알고 계셨나요? 사실입니다!
 
-Can you find out when things went wrong in this zoo? Then, go back to the last good commit and create a parallel universe where everyone is happy!
+이 동물원에서 문제가 언제 발생했는지 찾아보실 수 있나요? 그런 다음 마지막으로 좋았던 커밋으로 돌아가서 모두가 행복한 평행 우주를 만들어보세요!
 
 [cli]
 
@@ -51,15 +51,17 @@ git branch -d main
 [win]
 
 # Make sure that the child is happy.
+# 아이가 행복한지 확인하세요.
 git ls-tree --name-only -r HEAD | grep child
 
 # Make sure that the lion gets something to eat.
+# 사자가 먹을 것을 얻는지 확인하세요.
 git show HEAD:cage/lion | grep -v "very hungry"
 
 [congrats]
 
-Whew, good job! This seems like a *much* better outcome.
+휴, 잘했어요! 이 결과가 훨씬 더 나아 보이네요.
 
-Feel free to add more parallel timelines, or make them longer.
+원하시면 더 많은 평행 타임라인을 추가하거나 더 길게 만들 수 있습니다.
 
-If you're ready, our next mission is already waiting...
+준비가 되시면, 다음 임무가 이미 기다리고 있습니다...

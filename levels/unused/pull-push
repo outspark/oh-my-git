@@ -3,13 +3,13 @@ cards = checkout commit-auto reset-hard pull push
 
 [description]
 
-The events and timelines you see are always only what your own time machine knows about!
+여러분이 보는 이벤트와 타임라인은 항상 자신의 타임머신이 알고 있는 것뿐입니다!
 
-Of course, time agents don't have to work alone! Here, your sidekick has already prepared a merge for you! You can use the "pull" card to transfer it to your own time machine.
+물론 시간 요원들은 혼자서 일할 필요가 없습니다! 여기서 당신의 사이드킥이 이미 병합을 준비해 두었습니다! "pull" 카드를 사용하여 이를 자신의 타임머신으로 전송할 수 있습니다.
 
-Then, add another event on top (what does Sam have for dinner?), and `push` the result, to transfer it back to your sidekick!
+그런 다음, 하나의 이벤트를 추가로 더해(Create a new commit to answer: Sam은 저녁으로 무엇을 먹습니까?), `push`로 결과를 다시 사이드킥에게 전송하세요!
 
-You can only ever manipulate things in your own time machine (the one on the bottom).
+자신의 타임머신에서만 작업을 조작할 수 있습니다(아래에 있는 타임머신).
 
 [setup yours]
 
@@ -43,9 +43,9 @@ git commit -m "Let's make this breakfast compromise" --author="Sidekick <sidekic
 
 [win sidekick]
 
-# Below main's parent, there is a rhombus:
+# main의 부모 아래에 마름모 꼴이 있습니다:
 git rev-parse main^^ && test "$(git rev-parse main^^1^)" = "$(git rev-parse main^^2^)"
 
 [congrats]
 
-In reality, in many cases, a lot of time agents work together to build a really good future together! :)
+실제로, 많은 경우 많은 시간 요원들이 함께 협력하여 정말 좋은 미래를 함께 만들어 갑니다! :)

@@ -3,7 +3,7 @@ cards = add reset checkout commit
 
 [description]
 
-For practice, make a commit where all files contain an "x"!
+연습을 위해, 모든 파일에 "x"가 포함된 커밋을 만드세요!
 
 [setup]
 
@@ -19,9 +19,9 @@ echo c > c
 
 [win]
 
-# File a contains "x" in the last main commit.
+# 파일 a는 마지막 main 커밋에 "x"를 포함할 것.
 test "$(git show main:a)" = x
-# File b contains "x" in the last main commit.
+# 파일 b는 마지막 main 커밋에 "x"를 포함할 것.
 test "$(git show main:b)" = x
-# File c contains "x" in the last main commit.
+# 파일 c는 마지막 main 커밋에 "x"를 포함할 것.
 test "$(git show main:c)" = x

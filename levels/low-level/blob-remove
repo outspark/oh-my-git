@@ -1,16 +1,16 @@
 [description]
 
-There's a simple command to remove all objects that are not referenced by anything:
+참조되지 않는 객체를 모두 제거하는 간단한 명령어가 있습니다:
 
     git prune
 
-Remove all blobs in this repository.
+이 저장소에 있는 모든 blob을 제거하십시오.
 
 [congrats]
 
-Generally, `git prune` will be useful if you want to clean up some objects you made.
+일반적으로 `git prune`은 만든 객체를 정리하려고 할 때 유용합니다.
 
-Alternatively, you can also click the "Reload" button to restart a level.
+또한, "Reload" 버튼을 클릭하여 레벨을 다시 시작할 수도 있습니다.
 
 [setup]
 

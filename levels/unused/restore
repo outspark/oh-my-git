@@ -3,9 +3,9 @@ cards = checkout-from
 
 [description]
 
-You've been working on your essay for a while. But you're not happy with the changes you've made recently. You want to go back to the version called "Best version"!
+당신은 한동안 에세이를 작성하고 있었습니다. 하지만 최근에 변경한 내용이 마음에 들지 않습니다. "최고의 버전"이라는 버전으로 돌아가고 싶습니다!
 
-No problem, you can use the `checkout` card to restore your essay from an older commit!
+문제없습니다, `checkout` 카드를 사용하여 이전 커밋에서 에세이를 복원할 수 있습니다!
 
 [setup]
 
@@ -24,5 +24,5 @@ git commit -a -m "Less-good version"
 
 [win]
 
-# For nostalgic reasons, restore the very first backup you made!
+# 첫 백업을 향한 향수 때문에, 그 백업을 복원하세요!
 diff essay.txt <(echo "Best version")

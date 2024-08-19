@@ -3,9 +3,9 @@ cards = checkout commit-auto pull fetch push
 
 [description]
 
-Here's a sandbox with a remote! Try pulling, fetching, or pushing!
+여기 리모트가 있는 샌드박스가 있습니다! 가져오기, 패치(fetch), 푸시를 시도해보세요!
 
-How can you push tags and branches on a remote? How can you delete them again?
+태그와 브랜치를 리모트로 어떻게 푸시할 수 있나요? 다시 삭제하는 방법은?
 
 [setup yours]
 

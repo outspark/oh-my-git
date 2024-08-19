@@ -3,9 +3,9 @@ cards = checkout commit-auto
 
 [description]
 
-The yellow boxes are frozen points in time, we call them "commits"! You can travel between them using the "checkout" card! (Try it!)
+이 노란 상자들은 시간 속에서 얼어있는 지점들입니다. 우리는 이 지점들을 "커밋(commit)"이라고 불러요! "체크아웃" 카드를 사용해서 이 지점들 사이를 이동할 수 있어요! (한번 해보세요!)
 
-Can you find out what happened here? Then, while on the last commit, edit the files to fix the problem, and make a new commit!
+여기서 무슨 일이 일어났는지 알아볼 수 있나요? 그런 다음, 마지막 커밋 상태에서 파일을 수정하고 새 커밋을 만들어 보세요!
 
 [cli]
 
@@ -35,9 +35,9 @@ git branch -df main
 
 [win]
 
-# Restore sisterly peace.
+# 자매의 평화를 회복하세요.
 { git show HEAD:piggy_bank | grep "10 coins"; } && { git show HEAD:little_sister | grep -v "10 coins"; } && { git rev-parse HEAD^^^; }
 
 [congrats]
 
-Wonderful! Now that you're getting familiar with the time machine, let's look at some more complicated situations...
+멋져요! 이제 시간 기계에 더 익숙해졌으니, 좀 더 복잡한 상황을 살펴보도록 할까요...

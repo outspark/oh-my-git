@@ -1,31 +1,31 @@
 [description]
 
-Blobs usually represent the content of a file. But on their own, they don't have any metadata, not even a name!
+블롭(blob)은 보통 파일의 내용을 나타냅니다. 하지만 메타데이터가 전혀 없고, 이름조차도 없습니다!
 
-Git has a very powerful concept to store metadata related to blobs: the index! It's a list that relates blobs to filenames and access permissions.
+Git은 블롭에 관련된 메타데이터를 저장할 수 있는 강력한 개념을 가지고 있습니다: 바로 인덱스입니다! 인덱스는 블롭을 파일 이름과 접근 권한과 연관짓는 리스트입니다.
 
-The most convenient option to add an entry to the index is via an existing file:
+인덱스에 항목을 추가하는 가장 편리한 방법은 기존 파일을 통해서입니다:
 
     echo "my content" > file
     git update-index --add file
 
-Add three entries to the index! For a bonus challenge: can you add a file that is inside of a directory, like "directory/file"?
+인덱스에 항목을 세 개 추가하세요! 보너스 도전: "directory/file"과 같이 디렉토리 내부의 파일을 추가할 수 있나요?
 
 [congrats]
 
-There's another way to add an entry to the index directly:
+인덱스에 항목을 직접 추가하는 또 다른 방법이 있습니다:
 
     git update-index --add --cacheinfo <mode>,<blobhash>,<name>
 
-The first three numbers of the mode describe the type of the entry, "100" is a regular file.
+모드의 첫 세 자리는 항목 유형을 설명하며, "100"은 일반 파일입니다.
 
-The second three number describe the permissions. Only "644" (non-executable) and "755" (executable) are supported.
+두번째 세 자리는 권한을 설명합니다. "644" (실행 불가)와 "755" (실행 가능)만 지원됩니다.
 
-You can insert the hash of an object into the terminal by right-clicking on it! :)
+터미널에 개체의 해시를 삽입하려면 오른쪽 버튼 클릭으로 삽입할 수 있습니다! :)
 
 [setup]
 
-[setup goal]
+# 목표 설정
 
 echo "file 1" > file1
 echo "file 2" > file2

@@ -3,10 +3,10 @@ cards = file-delete
 
 [description]
 
-The first day at Time Travel School comes to an end and you receive the key to your room.
-Full of excitement you open the door just to find... spider webs! Spider webs everywhere!
+타임 트래블 학교에서의 첫날이 끝나고 당신은 방 열쇠를 받습니다.
+설레는 마음으로 문을 열었더니... 거미줄이 가득합니다! 거미줄이 방 everywhere!
 
-Remove all the spider webs you can find with the remove card!
+제거 카드를 사용하여 모든 거미줄을 제거하십시오!
 
 [cli]
 
@@ -33,4 +33,4 @@ ls | grep bed
 
 [congrats]
 
-Your room looks now very tidy and cozy! Time to unpack your stuff!
+당신의 방은 이제 깨끗하고 아늑합니다! 이제 짐을 풀 시간입니다!

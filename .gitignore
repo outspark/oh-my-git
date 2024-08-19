@@ -2,6 +2,7 @@
 /cache/
 /dependencies/
 /build/
+/backup/
 *.ipynb
 .env
 *.jsonl

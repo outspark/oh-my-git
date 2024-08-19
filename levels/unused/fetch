@@ -3,11 +3,11 @@ cards = checkout fetch commit-auto
 
 [description]
 
-Here, you already have two remotes configured! You can list them using `git remote`.
+여기, 이미 두 개의 원격 저장소가 설정되어 있습니다! `git remote` 명령어를 사용하여 원격 저장소를 확인할 수 있습니다.
 
-Fetch from both, and look at the suggestions.
+두 원격 저장소에서 데이터를 가져오고, 제안을 살펴보세요.
 
-Then, make a new commit on top of your original one that introduces a compromise.
+그런 다음, 원래 커밋 위에 새로운 커밋을 추가하여 타협안을 제시해 보세요.
 
 [setup]
 
@@ -30,6 +30,8 @@ git commit -am "Blue"
 [win]
 
 # Your proposal is acceptable for friend1.
+# 당신의 제안이 friend1에게 적합합니다.
 git show main:proposal | git grep green
 # Your proposal is acceptable for friend2.
+# 당신의 제안이 friend2에게 적합합니다.
 git show main:proposal | git grep blue

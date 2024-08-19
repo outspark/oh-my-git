@@ -3,7 +3,7 @@ cards = checkout commit reset-hard reset add rebase-interactive rebase-continue 
 
 [description]
 
-Here, both changes happened in one commit! Split them to be in two commits instead.
+여기서는 두 가지 변경이 하나의 커밋에 포함되었습니다! 이를 두 개의 커밋으로 나눠보세요.
 
 [setup]
 

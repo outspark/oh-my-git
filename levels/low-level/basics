@@ -1,22 +1,25 @@
 [description]
 
-For this prototype, we assume you have some experience with the command line. Here are some commands that will be useful:
+이 프로토타입에서는 명령 줄에 대한 약간의 경험이 있다고 가정합니다. 다음 명령어들이 유용할 것입니다:
 
 - ls
 - echo content > file
 - cat file
 - mkdir dir
 
-Find the riddle in your current directory and put the answer into the file "answer"!
+현재 디렉토리에서 수수께끼를 찾아 답을 "answer" 파일에 입력하세요!
 
 [congrats]
 
-Omnomnom!
+냠냠!
 
-For technical reasons, you can't use `cd` in this prototype yet. But there won't be a lot of interaction with the file system anyways. :)
+기술적인 이유로, 이 프로토타입에서는 아직 `cd`를 사용할 수 없습니다. 하지만 파일 시스템과의 상호작용은 많지 않을 것입니다. :)
 
 [setup]
 
+# riddle 디렉토리 생성
+# "ppl p" 내용의 consonants 파일 생성
+# "ae ie" 내용의 vowels 파일 생성
 mkdir riddle
 echo "ppl p" > riddle/consonants
 echo "ae ie" > riddle/vowels

@@ -3,11 +3,11 @@ cards = checkout commit-auto reset-hard rebase-interactive cherry-pick
 
 [description]
 
-Oops, looks like there's something messed up here. Can you put the events back into their correct order?
+이런, 뭔가가 엉켜 있는 것 같네요. 이벤트를 올바른 순서로 되돌릴 수 있나요?
 
-There are two ways to do this: You can drag the "interactive rebase" card to the commit before the one you want to change, then reorder the lines in the file that opens, and save it.
+이렇게 하는 두 가지 방법이 있습니다: "인터렉티브 리베이스(interactive rebase)" 카드를 변경하고 싶은 커밋 바로 이전으로 드래그한 다음, 열리는 파일에서 줄을 재정렬한 후 저장하세요.
 
-Or you can reset the main tag to the very first commit, and then cherry-pick single commits in the order you want. You have cards for both approaches!
+또는 main 태그를 가장 첫 번째 커밋으로 리셋하고, 그 후 싱글 커밋을 원하는 순서대로 체리픽(cherry-pick)할 수 있습니다. 두 가지 접근 방식 모두에 대한 카드가 있습니다!
 
 [setup]
 
@@ -75,4 +75,4 @@ git commit -am "Put on shirt"
 
 [congrats]
 
-Feel free to reset the level and try the other strategy! Which one do you like better?
+본 레벨을 리셋하고 다른 전략을 시도해 보세요! 어느 방법이 더 좋았습니까?

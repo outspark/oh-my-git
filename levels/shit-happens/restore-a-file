@@ -3,9 +3,9 @@ cards = checkout
 
 [description]
 
-Oops - you deleted the "essay" file, which you worked on all night!
+이런 - 밤새 작업한 "essay" 파일을 지워버렸습니다!
 
-Luckily, Git is here to help! You can use `git checkout` to restore the file!
+다행히 Git이 도와줄 수 있습니다! `git checkout` 명령어를 사용하여 파일을 복원할 수 있습니다!
 
 [setup]
 
@@ -19,4 +19,5 @@ rm essay
 [win]
 
 # Restore the essay to contain "important content"
+# essay 파일이 중요한 내용으로 복원되었는지 확인합니다
 test "$(cat essay)" = "important content"

@@ -3,11 +3,11 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-You added way too many tags? No prob! Delete them with
+태그를 너무 많이 추가하셨나요? 걱정 마세요! 다음 명령어로 삭제할 수 있습니다.
 
     git tag -d <tag-name>
     
-Remove all tags in this repo!
+이 저장소의 모든 태그를 제거하세요!
 
 ---
 tipp1
@@ -42,6 +42,7 @@ git checkout --detach main
 [win]
 
 # Did you remove all tags?
+# 모든 태그를 제거했나요?
 test "$(git tag -l | wc -l)" -eq 0
 
 [actions]
@@ -50,4 +51,4 @@ test "$(git tag -l | wc -l)" -eq 0
 
 [congrats]
 
-Well done :)
+잘 하셨어요 :)

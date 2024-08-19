@@ -3,11 +3,11 @@ cards = add reset checkout commit commit-a
 
 [description]
 
-There is a time-saving trick, where instead of a plain `git commit`, you can use
+시간 절약 팁으로, 일반적인 `git commit` 대신 다음을 사용할 수 있습니다.
 
     git commit -a
 
-This will automatically add all changes you made to local files! Very convenient.
+이 명령어는 로컬 파일에 대해 변경한 모든 내용을 자동으로 추가합니다! 매우 편리합니다.
 
 [setup]
 
@@ -22,5 +22,5 @@ echo x > c
 
 [win]
 
-# Make a commit where all files contain "x".
+# 모든 파일에 "x"가 들어 있는 커밋을 만드세요.
 test "$(git show main:a)" = x && test "$(git show main:b)" = x && test "$(git show main:c)" = x

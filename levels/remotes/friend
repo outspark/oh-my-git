@@ -3,9 +3,9 @@ cards = pull push commit-auto checkout
 
 [description]
 
-Your friend added another line to your essay! Get it, add a third one and send it to them!
+친구가 당신의 에세이에 한 줄을 추가했습니다! 이를 가져와서 세 번째 줄을 추가하고 다시 친구에게 보내세요!
 
-Take turns until you have five lines!
+서로 번갈아 가며 다섯 줄을 완성하세요!
 
 [setup yours]
 
@@ -24,24 +24,24 @@ git commit -am "Another line"
 [actions friend]
 
 if test "$(git log --oneline | wc -l)" -eq 3; then
-    git reset --hard main # Necessary because the working directory isn't updated when we push to the friend.
+    git reset --hard main # 친구에게 푸시할 때 작업 디렉토리가 업데이트되지 않기 때문에 필요합니다.
     echo "Line 4, blurbblubb" >> essay
     git commit -am "Final line"
-    hint "Oh nice, I added a fourth line!"
+    hint "오 좋아, 나는 네 번째 줄을 추가했어!"
 fi
 
 [win]
 
-# Got the second line from your friend
+# 친구로부터 두 번째 줄을 얻었습니다.
 git show HEAD:essay | grep gnihihi
 
-# Got the fourth line from your friend.
+# 친구로부터 네 번째 줄을 얻었습니다.
 git show HEAD:essay | grep blurbblubb
 
 [win friend]
 
-# The friend got a third line from you
+# 친구가 당신한테서 세 번째 줄을 받았습니다.
 test "$(git show HEAD:essay | wc -l)" -ge 3
 
-# The friend got a fifth line from you
+# 친구가 당신한테서 다섯 번째 줄을 받았습니다.
 test "$(git show HEAD:essay | wc -l)" -ge 5

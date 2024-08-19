@@ -3,12 +3,12 @@ cards = checkout commit-auto merge reset-hard
 
 [description]
 
-But what happens if you forgot to tag your current commit?
-No Prob! You can also tag older commits via
+하지만 현재 커밋에 태그하는 것을 잊어버렸다면 어떻게 될까요?
+문제 없습니다! 이전 커밋에도 태그를 할 수 있습니다:
 
     git tag <tag-name> <commit-hash>
     
-Tag the commit "Adding feature 2" with the name "v1"!
+커밋 "Adding feature 2"에 "v1"이라는 태그를 추가하세요!
 
 ---
 tipp1
@@ -34,11 +34,12 @@ echo "event 3" >> feature-list
 git add .
 git commit -m "Adding feature 3"
 
-git checkout --detach main
+git checkout --detach main # main 브랜치에서 떨어져 나옵니다
 
 [win]
 
 # Did you create a new tag?
+# 새 태그를 만들었나요?
 test "$(git show v1 -s --format=%h)" = "$(git show HEAD~1 -s --format=%h)"
 
 [actions]
@@ -47,4 +48,4 @@ test "$(git show v1 -s --format=%h)" = "$(git show HEAD~1 -s --format=%h)"
 
 [congrats]
 
-Well done :)
+잘 했어요 :)
