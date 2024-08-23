@@ -4,7 +4,7 @@ all: linux macos windows
 
 linux:
 	mkdir -p build/$(name)-linux
-	godot --export "Linux" "build/$(name)-linux/$(name)"
+	godot3 --export "Linux" "build/$(name)-linux/$(name)"
 	cd build/$(name)-linux && zip -r ../$(name)-linux.zip *
 
 # macos:
